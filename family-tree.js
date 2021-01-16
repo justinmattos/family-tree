@@ -1,6 +1,9 @@
 class FamilyTree {
-  constructor(ancestor) {
-    this.name = ancestor;
+  constructor(value) {
+    if (value == undefined || typeof value != 'string') {
+      throw error;
+    }
+    this.value = value;
     this.children = [];
   }
   insert(child) {
@@ -8,7 +11,7 @@ class FamilyTree {
     this.children.push(descendant);
   }
   findMember(name) {
-    if (this.name == name) {
+    if (this.value == name) {
       return this;
     } else {
       for (let i = 0; i < this.children.length; i++) {
