@@ -1,0 +1,51 @@
+body {
+  font-family: Verdana;
+  color: white;
+  background-color: rgb(65, 122, 230);
+  line-height: 2em;
+}
+
+#header {
+  text-align: center;
+}
+
+#entryBox {
+  text-align: center;
+  border: solid white 0.5em;
+  padding: 1em;
+}
+
+#nodeList {
+  border: 0.5em solid white;
+  border-top: none;
+  padding: 1em;
+}
+
+input {
+  width: 5em;
+}
+
+.center {
+  margin: auto;
+  width: 80%;
+}
+
+.collapsible {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  text-align: left;
+  outline: none;
+  margin-top: 1em;
+}
+
+.content {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  display: none;
+  overflow: hidden;
+  background-color: rgb(65, 122, 230);
+}

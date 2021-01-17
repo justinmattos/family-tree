@@ -1,11 +1,28 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Family Tree!</title>
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <h1>Family Tree!</h1>
-    <input placeholder="enter name" />
-    <button id="insert">Insert Child</button>
-    <br /><br /><br />
+    <div id="header" class="center">
+      <h1>Family Tree!</h1>
+    </div>
+    <div id="entryBox" class="center">
+      <div>
+        <label>Enter Name:</label>
+          <input placeholder="John" id="inputName">
+      </div>
+      <div>
+        <label>Enter Age:</label>
+          <input placeholder="43" id="inputAge">
+      </div>
+      <div>
+        <button id="inputButton">Insert Head of Family</button>
+      </div>
+    </div>
+    <div id="nodeList" class="center"></div>
+
+    <script src="family-tree.js"></script>
   </body>
 </html>
